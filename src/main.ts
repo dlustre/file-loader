@@ -31,10 +31,6 @@ async function selectFile(file: File) {
 }
 
 async function main() {
-    // Load a placeholder scene
-    const url = "https://huggingface.co/datasets/dylanebert/3dgs/resolve/main/bonsai/bonsai-7k.splat";
-    await SPLAT.Loader.LoadAsync(url, scene, () => {});
-
     // Render loop
     const frame = () => {
         controls.update();
